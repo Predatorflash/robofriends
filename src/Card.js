@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "tachyons";
+
 class Card extends Component {
   render() {
     return (
-      <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
+      <div className="bg-light-green dib br3 pa2 ma2 grow bw4 shadow-5">
         <h1>Robot Friends</h1>
-        <img src="https://robohash.org/63.143.42.242.png" alt="Robots" />
+        {console.log(this.props.id)}
+        <img src={`https://robohash.org/${this.props.id}?100x100`} alt="Rots" />
         <div>
-          <h2> Jane Doe </h2>
-          <p> janedoe @gmail.com </p>
+          <h2> {this.props.name} </h2>
+          <p> {this.props.email} </p>
         </div>
       </div>
     );
