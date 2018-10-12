@@ -5,7 +5,10 @@ class Card extends Component {
   render() {
     return (
       <div className="bg-light-green dib br3 pa2 ma2 grow bw4 shadow-5">
-        <h1>Robot Friends</h1>
+        <h1>
+          robot id=
+          {this.props.id}
+        </h1>
 
         <img src={`https://robohash.org/${this.props.id}?100x100`} alt="Rots" />
         <div>

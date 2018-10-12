@@ -7,6 +7,7 @@ class Sb extends Component {
         <input
           type="textarea"
           placeholder="search here"
+
           onChange={this.state.this.onsearchchange}
         />
       </div>
